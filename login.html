@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to Apply4Company and continue your career journey.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#030a14">
+    <title>Apply4Company | Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand" aria-label="Apply4Company Home">
+                <span class="brand-icon">A</span>
+                <span class="brand-name">Apply<span>4</span>Company</span>
+            </a>
+
+            <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="header-clock" aria-label="Current India date and time">
+                <span class="clock-date" id="ist-date">08 Sep 2026</span>
+                <span class="clock-time" id="ist-time">12:17:00 AM</span>
+            </div>
+
+            <button class="menu-toggle" type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="main-navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="auth-page" aria-labelledby="login-title">
+            <div class="hero-background" aria-hidden="true">
+                <div class="background-glow glow-blue"></div>
+                <div class="background-glow glow-purple"></div>
+                <div class="background-grid"></div>
+                <div class="moon"></div>
+                <div class="city">
+                    <div class="building building-1"></div>
+                    <div class="building building-2"></div>
+                    <div class="building building-3"></div>
+                    <div class="building building-4"></div>
+                    <div class="building building-5"></div>
+                    <div class="building building-6"></div>
+                    <div class="building building-7"></div>
+                    <div class="building building-8"></div>
+                </div>
+            </div>
+
+            <div class="container auth-container">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <div class="auth-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                                <path d="M10 17l5-5-5-5"/>
+                                <path d="M15 12H3"/>
+                            </svg>
+                        </div>
+
+                        <p class="section-label">WELCOME BACK</p>
+                        <h1 id="login-title">Login to <span>Apply4Company.</span></h1>
+                        <p class="auth-description">
+                            Continue your career journey, discover companies and apply for the right opportunities.
+                        </p>
+                    </div>
+
+                    <form id="login-form" class="auth-form" method="post" novalidate>
+                        <div class="form-field">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email"
+                                   inputmode="email" autocomplete="username"
+                                   placeholder="Enter your email address"
+                                   required aria-describedby="email-error">
+                            <p id="email-error" class="field-error" role="alert"></p>
+                        </div>
+
+                        <div class="form-field">
+                            <div class="field-label-row">
+                                <label for="password">Password</label>
+                                <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
+                            </div>
+
+                            <div class="password-wrapper">
+                                <input id="password" name="password" type="password"
+                                       autocomplete="current-password"
+                                       placeholder="Enter your password"
+                                       required aria-describedby="password-error">
+                                <button type="button" id="password-toggle"
+                                        class="password-toggle"
+                                        aria-label="Show password"
+                                        aria-pressed="false">Show</button>
+                            </div>
+                            <p id="password-error" class="field-error" role="alert"></p>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" id="remember-me" name="remember-me">
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="signin-button" id="login-button">
+                            Login
+                        </button>
+
+                        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+                    </form>
+
+                    <div class="auth-divider">
+                        <span>Don't have an Apply4Company account?</span>
+                    </div>
+
+                    <a href="signup.html" class="signup-button">Create an Account</a>
+
+                    <p class="security-note">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 3l8 3v5c0 5.2-3.4 8.9-8 10c-4.6-1.1-8-4.8-8-10V6l8-3z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        Use a unique password. Production account security will be enforced by the secure backend.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2026 Apply4Company. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
